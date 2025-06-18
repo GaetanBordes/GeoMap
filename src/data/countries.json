@@ -1,0 +1,299 @@
+[
+  {
+    "nom": "Afghanistan",
+    "aliases": [
+      "Afghanistan"
+    ],
+    "coord": [
+      33.9391,
+      67.71
+    ],
+    "code": "af"
+  },
+  {
+    "nom": "Afrique du Sud",
+    "aliases": [
+      "Afrique du Sud",
+      "South Africa"
+    ],
+    "coord": [
+      -30.5595,
+      22.9375
+    ],
+    "code": "za"
+  },
+  {
+    "nom": "Albanie",
+    "aliases": [
+      "Albanie",
+      "Albania"
+    ],
+    "coord": [
+      41.1533,
+      20.1683
+    ],
+    "code": "al"
+  },
+  {
+    "nom": "Algérie",
+    "aliases": [
+      "Algérie",
+      "Algeria"
+    ],
+    "coord": [
+      28.0339,
+      1.6596
+    ],
+    "code": "dz"
+  },
+  {
+    "nom": "Allemagne",
+    "aliases": [
+      "Allemagne",
+      "Germany"
+    ],
+    "coord": [
+      51.1657,
+      10.4515
+    ],
+    "code": "de"
+  },
+  {
+    "nom": "Arabie Saoudite",
+    "aliases": [
+      "Arabie Saoudite",
+      "Saudi Arabia"
+    ],
+    "coord": [
+      23.8859,
+      45.0792
+    ],
+    "code": "sa"
+  },
+  {
+    "nom": "Argentine",
+    "aliases": [
+      "Argentine",
+      "Argentina"
+    ],
+    "coord": [
+      -38.4161,
+      -63.6167
+    ],
+    "code": "ar"
+  },
+  {
+    "nom": "Australie",
+    "aliases": [
+      "Australie",
+      "Australia"
+    ],
+    "coord": [
+      -25.2744,
+      133.7751
+    ],
+    "code": "au"
+  },
+  {
+    "nom": "Brésil",
+    "aliases": [
+      "Brésil",
+      "Brazil"
+    ],
+    "coord": [
+      -14.235,
+      -51.9253
+    ],
+    "code": "br"
+  },
+  {
+    "nom": "Canada",
+    "aliases": [
+      "Canada"
+    ],
+    "coord": [
+      56.1304,
+      -106.3468
+    ],
+    "code": "ca"
+  },
+  {
+    "nom": "Chine",
+    "aliases": [
+      "Chine",
+      "China"
+    ],
+    "coord": [
+      35.8617,
+      104.1954
+    ],
+    "code": "cn"
+  },
+  {
+    "nom": "États-Unis",
+    "aliases": [
+      "États-Unis",
+      "USA",
+      "United States",
+      "America"
+    ],
+    "coord": [
+      37.0902,
+      -95.7129
+    ],
+    "code": "us"
+  },
+  {
+    "nom": "France",
+    "aliases": [
+      "France",
+      "Paris"
+    ],
+    "coord": [
+      46.2276,
+      2.2137
+    ],
+    "code": "fr"
+  },
+  {
+    "nom": "Inde",
+    "aliases": [
+      "Inde",
+      "India"
+    ],
+    "coord": [
+      20.5937,
+      78.9629
+    ],
+    "code": "in"
+  },
+  {
+    "nom": "Iran",
+    "aliases": [
+      "Iran"
+    ],
+    "coord": [
+      32.4279,
+      53.688
+    ],
+    "code": "ir"
+  },
+  {
+    "nom": "Irak",
+    "aliases": [
+      "Irak",
+      "Iraq"
+    ],
+    "coord": [
+      33.2232,
+      43.6793
+    ],
+    "code": "iq"
+  },
+  {
+    "nom": "Israël",
+    "aliases": [
+      "Israël",
+      "Israel"
+    ],
+    "coord": [
+      31.0461,
+      34.8516
+    ],
+    "code": "il"
+  },
+  {
+    "nom": "Italie",
+    "aliases": [
+      "Italie",
+      "Italy"
+    ],
+    "coord": [
+      41.8719,
+      12.5674
+    ],
+    "code": "it"
+  },
+  {
+    "nom": "Japon",
+    "aliases": [
+      "Japon",
+      "Japan"
+    ],
+    "coord": [
+      36.2048,
+      138.2529
+    ],
+    "code": "jp"
+  },
+  {
+    "nom": "Maroc",
+    "aliases": [
+      "Maroc",
+      "Morocco"
+    ],
+    "coord": [
+      31.7917,
+      -7.0926
+    ],
+    "code": "ma"
+  },
+  {
+    "nom": "Pakistan",
+    "aliases": [
+      "Pakistan"
+    ],
+    "coord": [
+      30.3753,
+      69.3451
+    ],
+    "code": "pk"
+  },
+  {
+    "nom": "Russie",
+    "aliases": [
+      "Russie",
+      "Russia"
+    ],
+    "coord": [
+      61.524,
+      105.3188
+    ],
+    "code": "ru"
+  },
+  {
+    "nom": "Turquie",
+    "aliases": [
+      "Turquie",
+      "Turkey"
+    ],
+    "coord": [
+      38.9637,
+      35.2433
+    ],
+    "code": "tr"
+  },
+  {
+    "nom": "Ukraine",
+    "aliases": [
+      "Ukraine"
+    ],
+    "coord": [
+      48.3794,
+      31.1656
+    ],
+    "code": "ua"
+  },
+  {
+    "nom": "Yémen",
+    "aliases": [
+      "Yémen",
+      "Yemen"
+    ],
+    "coord": [
+      15.5527,
+      48.5164
+    ],
+    "code": "ye"
+  }
+]
