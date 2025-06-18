@@ -1,3 +1,4 @@
+// ✅ App.jsx
 import { useState } from "react";
 import "./App.css";
 import MapView from "./components/MapView";
@@ -11,6 +12,7 @@ function App() {
   const [markers, setMarkers] = useState([]);
   const [mapCenter, setMapCenter] = useState([48.8566, 2.3522]);
   const [countryCode, setCountryCode] = useState(null);
+  const [darkMode, setDarkMode] = useState(false);
 
   function handleIAResponse(reply) {
     setReponse(reply);
@@ -47,38 +49,70 @@ function App() {
     }
   }
 
+  const themeStyles = {
+    backgroundColor: darkMode ? "#1e1e1e" : "#f4f4f5",
+    color: darkMode ? "#f9fafb" : "#111",
+  };
+
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        backgroundColor: "#f4f4f5",
-        color: "#111",
-        fontFamily: "Arial, sans-serif",
-        padding: "2rem",
-      }}
-    >
+    <div style={{ minHeight: "100vh", ...themeStyles, position: "relative" }}>
+      {/* Bouton dark mode en haut à droite absolu */}
       <div
-        style={{
-          maxWidth: "800px",
-          margin: "0 auto",
-          backgroundColor: "#fff",
-          padding: "2rem",
-          borderRadius: "12px",
-          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-        }}
+        style={{ position: "fixed", top: "1rem", right: "1rem", zIndex: 1000 }}
       >
-        <h1
+        <button
+          onClick={() => setDarkMode(!darkMode)}
           style={{
-            fontSize: "1.75rem",
-            marginBottom: "1.5rem",
-            color: "#1f2937",
+            padding: "0.5rem 1rem",
+            backgroundColor: darkMode ? "#f9fafb" : "#1f2937",
+            color: darkMode ? "#1f2937" : "#f9fafb",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
           }}
         >
-          🧠 Carte Interactive IA - Géopolitique
-        </h1>
+          {darkMode ? "☀️ Clair" : "🌙 Sombre"}
+        </button>
+      </div>
 
-        <IAQuery onResponse={handleIAResponse} />
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "0 auto",
+          padding: "2rem",
+          display: "flex",
+          flexDirection: "column",
+          gap: "2rem",
+        }}
+      >
+        {/* Header */}
+        <div
+          style={{
+            borderRadius: "12px",
+            padding: "1rem",
+            backgroundColor: darkMode ? "#2d2d2d" : "#ffffff",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+            textAlign: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "1.75rem" }}>
+            🧠 Carte Interactive IA - Géopolitique
+          </h1>
+        </div>
 
+        {/* Zone de question */}
+        <div
+          style={{
+            backgroundColor: darkMode ? "#2d2d2d" : "#ffffff",
+            borderRadius: "12px",
+            padding: "1rem",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+          }}
+        >
+          <IAQuery onResponse={handleIAResponse} />
+        </div>
+
+        {/* Réponse IA */}
         <AnimatePresence>
           {reponse && (
             <motion.div
@@ -87,10 +121,10 @@ function App() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.4 }}
               style={{
-                backgroundColor: "#e5e7eb",
+                backgroundColor: darkMode ? "#2d2d2d" : "#ffffff",
+                borderRadius: "12px",
                 padding: "1rem",
-                borderRadius: "8px",
-                marginBottom: "1.5rem",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
                 whiteSpace: "pre-line",
               }}
             >
@@ -101,8 +135,29 @@ function App() {
           )}
         </AnimatePresence>
 
-        <MapView markers={markers} center={mapCenter} />
-        <NewsFeed countryCode={countryCode} />
+        {/* Carte */}
+        <div
+          style={{
+            backgroundColor: darkMode ? "#2d2d2d" : "#ffffff",
+            borderRadius: "12px",
+            padding: "1rem",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+          }}
+        >
+          <MapView markers={markers} center={mapCenter} darkMode={darkMode} />
+        </div>
+
+        {/* News */}
+        <div
+          style={{
+            backgroundColor: darkMode ? "#2d2d2d" : "#ffffff",
+            borderRadius: "12px",
+            padding: "1rem",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+          }}
+        >
+          <NewsFeed countryCode={countryCode} darkMode={darkMode} />
+        </div>
       </div>
     </div>
   );
